@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>INSERT COIN</title>
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<nav>
+		<a href="index.html">
+			<img src="images/logo.png" id="logo" alt="logo" />
+		</a>
+		<ul>
+			<li class="navOption">Acceso</li>
+			<li id="refPuzzle" class="navOption">Puzzles</li>
+			<li id="refPictionary" class="navOption">Pictionary</li>
+			<li class="navOption">Retrogames</li>
+		</ul>
+		<img src="images/menu-button.png" id="menu" alt="menu" />
+	</nav>
+	<div class="contenedor" id="acceso">
+		<img src="images/piggy-bank.svg" id="hucha" alt="hucha" />
+		<img src="images/coin.svg" id="moneda" alt="moneda" />
+		<div id="formulario">
+			<form>
+				<label for="username" id="label-username">Nombre de usuario</label>
+				<input type="text" name="username" id="username" placeholder="Nombre de usuario" />
+				<label for="pass" id="label-pass">Contraseña de acceso</label>
+				<input type="password" name="pass" id="pass" placeholder="Contraseña de acceso" />
+				<button id="entrar">Entrar</button>
+				<a href="#" id="nuevo">Soy nuevo por aquí</a>
+			</form>
+		</div>
+		<div id="formulario2" hidden>
+			<form>
+				<label for="usernameF" id="label-usernameF">Nombre de usuario</label>
+				<input type="text" name="usernameF" id="usernameF" placeholder="Nombre de usuario" />
+
+				<label for="passF" id="label-passF">Contraseña de acceso</label>
+				<input type="password" name="passF" id="passF" placeholder="Contraseña de acceso" />
+
+				<label for="repassF" id="label-repassF">ReContraseña de acceso</label>
+				<input type="password" name="repassF" id="repassF" placeholder="ReContraseña de acceso" />
+
+				<label for="email" id="label-email">Email</label>
+
+				<input type="text" name="email" id="email" placeholder="Email" />
+
+				<div>Aceptar condiciones de uso</div>
+				<input type="checkbox">
+				<span id="span"></span>
+				<button id="entrarF">Entrar</button>
+			</form>
+		</div>
+	</div>
+	<div class="contenedor" id="puzzles">
+		<div id="basePuzzle"></div>
+		<div class="panel">
+			<div class="fila">
+				<div class="casilla" id="casilla1"></div>
+				<div class="casilla" id="casilla2"></div>
+				<div class="casilla" id="casilla3"></div>
+				<div class="casilla" id="casilla4"></div>
+			</div>
+			<div class="fila">
+				<div class="casilla" id="casilla5"></div>
+				<div class="casilla" id="casilla6"></div>
+				<div class="casilla" id="casilla7"></div>
+				<div class="casilla" id="casilla8"></div>
+			</div>
+			<div class="fila">
+				<div class="casilla" id="casilla9"></div>
+				<div class="casilla" id="casilla10"></div>
+				<div class="casilla" id="casilla11"></div>
+				<div class="casilla" id="casilla12"></div>
+			</div>
+			<div class="fila">
+				<div class="casilla" id="casilla13"></div>
+				<div class="casilla" id="casilla14"></div>
+				<div class="casilla" id="casilla15"></div>
+				<div class="casilla" id="casilla16"></div>
+			</div>
+		</div>
+	</div>
+	<div class="contenedor" id="pictionary">
+		<div id="barraHerramientas">
+			<ul>
+				<li id="linea" onclick="pictionaryOptions(1)"></li>
+				<li id="rectangulo" onclick="pictionaryOptions(2)"></li>
+				<li id="elipse" onclick="pictionaryOptions(3)"></li>
+				<li id="dibujo" onclick="pictionaryOptions(4)"></li>
+				<li id="borrar" onclick="pictionaryOptions(5);"></li>
+				<li><input type="color" id="color" name="color"></li>
+			</ul>
+		</div>
+		<canvas id="pizarra" width="1000" height="400"></canvas>
+	</div>
+	</div>
+	<div class="contenedor" id="retrogames">
+		<h3>Retrogames</h3>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/funcions.js"></script>
+</body>
+
+</html>
